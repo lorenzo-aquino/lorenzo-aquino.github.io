@@ -1,11 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
-import Resume from "../components/resume"
+import Timeline from "../components/timeline"
 
 export default function Life() {
     return (
         <Layout>
-            <Resume />
+            <Timeline />
         </Layout>
     )
 }

@@ -1,10 +1,9 @@
 import React from "react"
 import styled from "@emotion/styled"
-import resumeData from "../data/resume.json"
+import timelineData from "../data/timeline.json"
 
-const Timeline = styled.div`
+const TimelineBody = styled.div`
     width: 100%;
-    padding: 100px 50px;
     position: relative;
     &:before {
         content: "";
@@ -42,7 +41,7 @@ const Title = styled.div`
     margin-bottom: 0.5em;
     float: left;
     width: 33%;
-    padding-right: 30px;
+    ${'' /* padding-right: 15px; */}
     text-align: right;
     position: relative;
     &:before {
@@ -54,7 +53,7 @@ const Title = styled.div`
         background-color: #fff;
         border-radius: 100%;
         top: 15%;
-        right: -6px;
+        right: -23px;
         z-index: 99;
     }
 `
@@ -86,7 +85,7 @@ function Role(props) {
             <Title>
                 <Duration>{props.role.duration}</Duration>
                 <TitleAndinstitution>
-                    {props.role.jobTitle}, {props.role.institution}
+                    <b>{props.role.jobTitle}</b>, {props.role.institution}
                 </TitleAndinstitution>
             </Title>
             <Body>
@@ -101,9 +100,9 @@ function Role(props) {
     )
 }
 
-export default function Resume() {
-    const resumeBody = resumeData.map(role => {
+export default function Timeline() {
+    const timelineBody = timelineData.map(role => {
         return <Role key={role.institution} role={role}></Role>
     })
-    return <Timeline>{resumeBody}</Timeline>
+    return <TimelineBody>{timelineBody}</TimelineBody>
 }

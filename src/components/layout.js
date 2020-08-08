@@ -13,9 +13,12 @@ const Header = styled.header`
     background-color: #4e92ff;
     padding: ${rhythm(1)} ${rhythm(8)} ${rhythm(1)};
     ${mq[2]} {
-        padding: ${rhythm(1)} ${rhythm(5)} ${rhythm(1)};
+        padding: ${rhythm(1)} ${rhythm(4)} ${rhythm(1)};
     }
     ${mq[1]} {
+        padding: ${rhythm(1)} ${rhythm(2)} ${rhythm(1)};
+    }
+    ${mq[0]} {
         padding: ${rhythm(1)};
     }
 `
@@ -26,19 +29,22 @@ const HeaderLink = styled(Link)`
     text-align: left;
     color: #ffffff;
     margin: 0;
-    font-size: 160%;
+    font-size: 150%;
     font-weight: bold;
-    text-shadow: 2px 2px #000000;
+    vertical-align: middle;
 `
 
 const Body = styled.div`
     background-color: #f2e8cf;
-    padding: ${rhythm(1)} ${rhythm(8)} ${rhythm(1)};
     color: #000000;
+    padding: ${rhythm(1)} ${rhythm(8)} ${rhythm(1)};
     ${mq[2]} {
-        padding: ${rhythm(1)} ${rhythm(5)} ${rhythm(1)};
+        padding: ${rhythm(1)} ${rhythm(4)} ${rhythm(1)};
     }
     ${mq[1]} {
+        padding: ${rhythm(1)} ${rhythm(2)} ${rhythm(1)};
+    }
+    ${mq[0]} {
         padding: ${rhythm(1)};
     }
 `
@@ -49,9 +55,12 @@ const Footer = styled.footer`
     font-size: 90%;
     padding: ${rhythm(1)} ${rhythm(8)} ${rhythm(1)};
     ${mq[2]} {
-        padding: ${rhythm(1)} ${rhythm(5)} ${rhythm(1)};
+        padding: ${rhythm(1)} ${rhythm(4)} ${rhythm(1)};
     }
     ${mq[1]} {
+        padding: ${rhythm(1)} ${rhythm(2)} ${rhythm(1)};
+    }
+    ${mq[0]} {
         padding: ${rhythm(1)};
     }
 `
@@ -93,13 +102,13 @@ export default function Layout({ children }) {
         <div>
             <SEO title="Lorenzo Aquino" description="Personal website of Lorenzo B Aquino"/>
             <Header>
-                <HeaderLink to="/">LORENZO AQUINO</HeaderLink>
+                <HeaderLink to="/">LORENZO</HeaderLink>
                 <HeaderLink
                     to="/contact"
                     css={css`
-                        width: 20%;
+                        width: 30%;
                         float: right;
-                        text-align: right;
+                        text-align: center;
                     `}
                 >
                     Contact
@@ -109,7 +118,7 @@ export default function Layout({ children }) {
                     css={css`
                         width: 20%;
                         float: right;
-                        text-align: right;
+                        text-align: center;
                     `}
                 >
                     Life
