@@ -1,6 +1,10 @@
 # This is the personal website of Lorenzo Bundoc Aquino
 
-![Lorenzo Aquino](/src/images/avatar.jpg)
+<p align="center">
+  <a href="https://lorenzo-aquino.github.io">
+    <img alt="Lorenzo Aquino" src="/src/images/avatar.jpg" width="200"/>
+  </a>
+</p>
 
 ## Task List
 - [x] First release - Index / Life / Contact pages are up
