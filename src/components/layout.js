@@ -114,14 +114,14 @@ export default function Layout({ children }) {
                     Contact
                 </HeaderLink>
                 <HeaderLink
-                    to="/life"
+                    to="/work"
                     css={css`
                         width: 20%;
                         float: right;
                         text-align: center;
                     `}
                 >
-                    Life
+                    Work
                 </HeaderLink>
             </Header>
             <Body>{children}</Body>
